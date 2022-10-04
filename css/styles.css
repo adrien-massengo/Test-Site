@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+:root {
+    --header-color: #1c1c1c;
+    --bg-color:#edf0f1;
+    --btn-color: #24252A;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--btn-color);
+    text-decoration: none;
+ }
+header {
+    display: flex;
+    background-color: var(--header-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    user-select: none;
+}
+
+body {
+    font-family: 'Inder', sans-serif;
+}
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    display: inline-block;
+    margin: 10px 0px;
+    border-radius: 50%;
+}
+.menu {
+    list-style: none;
+    background-color: var(--header-color);
+}
+.menu > li {
+    display: inline-block;
+    background-color: var(--header-color);
+    padding: 0px 20px;
+}
+
+.menu > li > a {
+    transition: all 0.3s ease 0s;
+    color: #fff;
+    background-color: var(--header-color);
+}
+.menu > li > a:hover {
+    padding: 9px 25px;
+    background-color: rgba(61, 61, 61, 0.7);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    cursor:pointer;
+    transition: all 0.5s ease 0s;
+    color: #fff;
+}
+
+.gradient_r {
+    background-image: linear-gradient(to bottom right, lightblue, darkblue, purple);
+}
+.gradient_r:hover  {
+    box-shadow: 10px 10px 0px black;
+}
+.cta {
+    background-color: var(--header-color);
+}
+
+.pagecont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:  10%;
+}
+.hmscont {
+    max-width: 200px;
+}
+
+.ntest {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 99;
+    cursor: pointer;
+}
+.scrollupimg {
+    width: 50px;
+    height: 50px;
+}
+.scrollTop {
+    display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.scrollTop:hover {
+    background-color: #555;
+}
